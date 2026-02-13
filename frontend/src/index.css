@@ -1,0 +1,28 @@
+/* index.css */
+:root {
+  font-family: 'Poppins', sans-serif; /* Humne Poppins font set kiya */
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #212529;
+  display: block; /* Flex aur centering hata di */
+}
+
+/* Scrollbar styling for professional look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #0d6efd;
+  border-radius: 10px;
+}

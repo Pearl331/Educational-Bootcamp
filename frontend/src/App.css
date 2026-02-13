@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+:root {
+  --primary: #0062ff;
+  --dark-navy: #0f172a;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #1a1a1a;
+  scroll-behavior: smooth;
+}
+
+/* Carousel Brightness Fix */
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3) !important; 
+}
+
+/* Heading Sizes */
+.section-title {
+  font-size: 2.6rem !important;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.section-tag {
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Course Card Elite Look */
+.course-card {
+  border: none !important;
+  border-radius: 20px !important;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05) !important;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+}
+
+.course-img-wrapper {
+  height: 200px;
+  overflow: hidden;
+}
+
+.course-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mentor Card Hover Effect */
+.mentor-card {
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.mentor-card:hover {
+  background: var(--primary) !important;
+  color: white !important;
+  transform: translateY(-5px);
+}
+
+.mentor-card:hover .text-primary, 
+.mentor-card:hover .text-muted {
+  color: white !important;
+}
+
+/* PREMIUM DARK FOOTER */
+.footer-main {
+  background: var(--dark-navy);
+  color: #ffffff;
+  padding: 80px 0 0px;
+  margin-top: 100px;
+  border-top: 5px solid var(--primary);
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.footer-link {
+  color: #94a3b8 !important;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--primary) !important;
+  padding-left: 8px;
+}
+
+.footer-bottom {
+  background: #020617;
+  padding: 25px 0;
+  margin-top: 50px;
+}
